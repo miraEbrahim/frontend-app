@@ -9,8 +9,8 @@ import Login from "./login.component";
 import Register from "./register.component";
 import Home from "./home.component";
 import Profile from "./profile.component";
-import BoardUser from "./board-user.component";
-import BoardModerator from "./board-moderator.component";
+import BoardDeveloper from "./board-developer.component";
+import BoardPs from "./board-ps.component";
 import BoardAdmin from "./board-admin.component";
 
 import Swagger from "./swagger.component";
@@ -21,7 +21,7 @@ class Navbar extends Component {
     this.logOut = this.logOut.bind(this);
 
     this.state = {
-      showModeratorBoard: false,
+      showPsBoard: false,
       showAdminBoard: false,
       currentUser: undefined,
     };
@@ -33,7 +33,7 @@ class Navbar extends Component {
     if (user) {
       this.setState({
         currentUser: user,
-        showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
+        showPsBoard: user.roles.includes("ROLE_MODERATOR"),
         showAdminBoard: user.roles.includes("ROLE_ADMIN"),
       });
     }
@@ -44,7 +44,7 @@ class Navbar extends Component {
   }
 
   render() {
-    const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
+    const { currentUser, showPsBoard, showAdminBoard } = this.state;
 
     return (
       <div>
@@ -59,10 +59,10 @@ class Navbar extends Component {
               </Link>
             </li>
 
-            {showModeratorBoard && (
+            {showPsBoard && (
               <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
-                  Moderator Board
+                <Link to={"/ps"} className="nav-link">
+                  PS Board
                 </Link>
               </li>
             )}
@@ -77,8 +77,8 @@ class Navbar extends Component {
 
             {currentUser && (
               <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User
+                <Link to={"/developer"} className="nav-link">
+                  Developer
                 </Link>
               </li>
             )}
@@ -122,8 +122,8 @@ class Navbar extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
-            <Route path="/user" component={BoardUser} />
-            <Route path="/mod" component={BoardModerator} />
+            <Route path="/developer" component={BoardDeveloper} />
+            <Route path="/ps" component={BoardPs} />
             <Route path="/admin" component={BoardAdmin} />
           </Switch>
         </div>

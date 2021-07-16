@@ -8,7 +8,7 @@ import ApiSpec from "./api-spec.component";
 import Analytic from "./analytic.component";
 import './User.css'
 
-export default class BoardUser extends Component {
+export default class BoardDeveloper extends Component {
   constructor(props) {
     super(props);
 
