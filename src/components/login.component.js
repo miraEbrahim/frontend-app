@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-
+import "./Login.css";
 import AuthService from "../services/auth.service";
 
 const required = value => {
@@ -81,15 +81,20 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="col-md-12">
-        <div className="card card-container">
-          <img
-            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-            alt="profile-img"
-            className="profile-img-card"
-          />
-
-          <Form
+      <div>
+       
+	<div className="container-fluid">
+		<div className="row main-content bg-tagg text-center">
+			<div className="col-md-4 text-center company__info">
+				<span>
+        <img src="http://localhost:8081/taggstar-star.png" class="img-fluid  mb-4" alt="Example image" width="700" height="500" loading="lazy"/></span>
+			
+			</div>
+			<div className="col-md-8 col-xs-12 col-sm-12 login_form ">
+				<div className="container-fluid">
+					
+					<div className="row">
+					<Form
             onSubmit={this.handleLogin}
             ref={c => {
               this.form = c;
@@ -145,7 +150,14 @@ export default class Login extends Component {
               }}
             />
           </Form>
-        </div>
+					</div>
+					<div className="row">
+						<p>Don't have an account? <a href="#">Register Here</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
       </div>
     );
   }

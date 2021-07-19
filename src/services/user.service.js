@@ -9,10 +9,16 @@ class UserService {
   }
 
   getUserBoard() {
-    return axios.get(API_URL + 'developer', { headers: authHeader() });
+    return axios.get(API_URL + 'user', { headers: authHeader() });
+  }
+  getDevBoard() {
+    return axios.get(API_URL + 'dev', { headers: authHeader() });
+  }
+  getOnboardBoard() {
+    return axios.get(API_URL + 'onboard', { headers: authHeader() });
   }
 
-  getModeratorBoard() {
+  getPsBoard() {
     return axios.get(API_URL + 'ps', { headers: authHeader() });
   }
 

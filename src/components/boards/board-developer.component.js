@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import UserService from "../services/user.service";
-import Swagger from "./swagger.component";
-import ProductFeed from "./product-feed.component";
-import LightDoc from "./light-doc.component";
-import ApiSpec from "./api-spec.component";
-import Analytic from "./analytic.component";
-import './User.css'
+import UserService from "../.././services/user.service";
+import Swagger from "../swagger.component";
+import ProductFeed from "./../pages/product-feed.component";
+import LightDoc from "./../pages/light-doc.component";
+import ApiSpec from "./../pages/api-spec.component";
+import Analytic from "./../pages/analytic.component";
+// import './User.css'
 
 export default class BoardDeveloper extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class BoardDeveloper extends Component {
   }
 
   componentDidMount() {
-    UserService.getUserBoard().then(
+    UserService.getDevBoard().then(
       response => {
         this.setState({
           content: response.data

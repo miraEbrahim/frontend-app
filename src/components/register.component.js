@@ -40,7 +40,7 @@ const vrole = value => {
   if (value.length < 3 || value.length > 20) {
     return (
       <div className="alert alert-danger" role="alert">
-        Choose either Dev , Admin or User.
+        Choose either Developer , Admin, ps  or User.
       </div>
     );
   }
@@ -141,12 +141,7 @@ export default class Register extends Component {
     return (
       <div className="col-md-12">
         <div className="card card-container">
-          <img
-            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-            alt="profile-img"
-            className="profile-img-card"
-          />
-
+          
           <Form
             onSubmit={this.handleRegister}
             ref={c => {
