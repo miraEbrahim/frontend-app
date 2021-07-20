@@ -1,7 +1,14 @@
-p, label, span {
+p,  h1,h2,h3,h4,h5,h6 {
   font-family: 'Dosis', sans-serif;
+  color: #333;
 }
 
 .bg-light-b{
-background-color: #e1f5fe;
+background-color: #2470dc;
 }
+
+p{
+  font-size: 0.668rem;
+ 
+}
+

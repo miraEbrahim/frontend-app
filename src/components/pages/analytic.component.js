@@ -4,10 +4,12 @@ import React, { Component } from "react";
 export default class Analytic extends Component {
     render() {
         return (
-            <div className="">
+            <div className="container-fluid">
 
-                <article className="blog-post">
-                    
+
+           
+         
+            <div className="p-5 mb-4 bg-light  rounded-3">
 
                     <h2>Summary</h2>
                     <p>This document contains instructions on how to integrate Taggstar with your own website analytics
@@ -16,7 +18,7 @@ export default class Analytic extends Component {
                         You may implement the analytics integration without the need for technical support from Taggstar. In
                         this case the option is free of charge</p>
 
-                </article>
+                </div>
             </div>
         );
     }

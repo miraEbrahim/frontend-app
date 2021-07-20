@@ -54,9 +54,9 @@ class Navbar extends Component {
               ) : (
                 <div className=" ml-auto">
                   <a className="">
-                    <Link to={"/login"} className="nav-link">
-                      Login
-                    </Link>
+                    {/* <Link to={"/login"} className="nav-link"> */}
+                      {/* Login */}
+                    {/* </Link> */}
                   </a>
                 </div>
               )}

@@ -36,7 +36,7 @@ export default class BoardDeveloper extends Component {
   render() {
     return (
       <div className="d-flex flex-wrap justify-content-around">
-        <ul className="nav col-10 col-lg-auto my-2  my-md-0 text-small pb-3">
+        <ul className="nav col-10 col-xs-2 my-2  justify-content-center my-md-0 text-small pb-3">
           <li className="nav-item">
             <a className="nav-link" href="./dev#api">
               <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" className="bi d-block mx-auto mb-1" height="24px" viewBox="0 0 24 24" width="24px" fill="#2470dc"><g><rect fill="none" height="24" width="24" /><path d="M14,12l-2,2l-2-2l2-2L14,12z M12,6l2.12,2.12l2.5-2.5L12,1L7.38,5.62l2.5,2.5L12,6z M6,12l2.12-2.12l-2.5-2.5L1,12 l4.62,4.62l2.5-2.5L6,12z M18,12l-2.12,2.12l2.5,2.5L23,12l-4.62-4.62l-2.5,2.5L18,12z M12,18l-2.12-2.12l-2.5,2.5L12,23l4.62-4.62 l-2.5-2.5L12,18z" /></g></svg>
@@ -83,47 +83,51 @@ export default class BoardDeveloper extends Component {
           </li>
         </ul>
         <div className="container-fluid">
-          <div className="row">
-            <main className="col-md-10 ms-sm-auto col-lg-12">
+        <div className="row">
               <div className="p-5 mb-4 bg-light-b rounded-3">
-                <h1 className="display-5 fw-bold" id="api">REST API V2</h1>
-                <p className="col-md-8 fs-4">taggstar REST API.</p>
+                <h1 className="display-5 fw-bold text-white" id="api">REST API V2</h1>
+                <p className="col text-white">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              </div>
               </div>
               <ApiSpec></ApiSpec>
-              <div className="container-fluid">
-                <div className="p-5 mb-4 bg-light  rounded-3">
+              
+        <div className="row">
+                 
+              <div className="p-5 mb-4 bg-light rounded-3">
                   <h2 className="display-5 fw-bold" id="api-doc">REST API V2 Documentation</h2>
-                  <p className="col-md-8 fs-4">Swagger UI allows anyone — be it your development team or your end consumers — to visualize and interact with the API’s resources without having any of the implementation logic in place. It’s automatically generated from your OpenAPI (formerly known as Swagger) Specification, with the visual documentation making it easy for back end implementation and client side consumption.</p>
+                  <p className="col text-white">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
                   <Link to={"/api-doc"} className="nav-link">
                     <button className="btn btn-primary" type="button">Start Testing</button>
                   </Link>
                 </div>
               </div>
-              <div className="container-fluid">
+             
                 <div className="row">
                   <div className="p-5 mb-4 bg-light-b rounded-3">
-                    <h1 className="display-5 fw-bold" id="pi">Product Integration</h1>
-                    <p className="col-md-8 fs-4">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                    <ul>
+                    <h1 className="display-5 fw-bold text-white" id="pi">Product Integration</h1>
+                    <p className="col text-white">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <ul className="text-white">
                       <li>Product Feed Requirement</li>
                       <li>Taggstar Light Library</li>
                     </ul>
                   </div>
+                  </div>
                   <ProductFeed></ProductFeed>
                   <LightDoc></LightDoc>
-                </div>
-                <div className="container-fluid">
+                
+               
                   <div className="row">
                     <div className="p-5 mb-4 bg-light-b rounded-3">
-                      <h3 className="blog-post-title" id="ai">Analytic Integeration</h3>
-                      <Analytic></Analytic>
+                      <h1 className="display-5 fw-bold text-white" id="ai">Analytic Integeration</h1>
+                      <p className="text-white">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-          <div>
+                    </div>
+                    <Analytic></Analytic>
+                 
+              
+          
+         
+        
             <Switch>
               <Route exact path="/api-doc" component={Swagger} />
               <Route exact path="/user#light-doc" component={LightDoc} />
@@ -134,7 +138,7 @@ export default class BoardDeveloper extends Component {
             </Switch>
           </div>
         </div>
-      </div>
+     
     );
   }
 }
