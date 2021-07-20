@@ -4,9 +4,12 @@ import React, { Component } from "react";
 export default class ProductFeed extends Component {
     render() {
         return (
-            <div className="">
+            <div className="container-fluid">
 
-                <article className="blog-post">
+
+           
+         
+            <div className="p-5 mb-4 bg-light  rounded-3">
                     <h2 className="blog-post-title" id="product-feed">Product Feed Requirement</h2>
 
                     <h2>Summary</h2>
@@ -84,7 +87,7 @@ export default class ProductFeed extends Component {
           </tbody>
         </table>
         </div>
-                </article>
+              </div>
             </div>
                 );
     }

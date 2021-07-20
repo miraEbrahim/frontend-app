@@ -2,8 +2,12 @@ import React, { Component } from "react";
 export default class LightDoc extends Component {
   render() {
     return (
-      <div className="">
-        <article className="blog-post">
+      <div className="container-fluid">
+
+
+           
+         
+             <div className="p-5 mb-4 bg-light  rounded-3">
           <h2 className="blog-post-title" id="light-doc">taggstar Light Library</h2>
           <p>Taggstar Lite is a cut down version of the full integration code that Taggstar uses on desktop
             and mobile websites. It is designed to work both in the browser and in Node.js environment.</p>
@@ -695,8 +699,9 @@ export default class LightDoc extends Component {
               &#125;
             </code></p>
           </div>
-        </article>
-      </div>
+       </div>
+       </div>
+      
     );
   }
 }

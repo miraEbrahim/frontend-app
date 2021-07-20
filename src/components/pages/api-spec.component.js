@@ -4,9 +4,12 @@ import React, { Component } from "react";
 export default class ApiSpec extends Component {
     render() {
         return (
-            <div className="">
+            <div className="container-fluid">
 
-                <article className="blog-post">
+
+           
+         
+             <div className="p-5 mb-4 bg-light  rounded-3">
                     <h3 className="blog-post-title" id="api-spec">REST API V2 Specification</h3>
 
                     <h2>Introduction</h2>
@@ -58,8 +61,9 @@ export default class ApiSpec extends Component {
                             </tbody>
                         </table>
                     </div>
-                </article>
-            </div>
+               </div>
+               </div>
+            
         );
     }
 }
