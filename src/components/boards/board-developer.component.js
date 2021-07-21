@@ -77,7 +77,7 @@ export default class BoardDeveloper extends Component {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="./dev#ai">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" className="bi d-block mx-auto mb-1" width="24px" fill="#2470dc"><path d="M0 0h24v24H0z" fill="none" /><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="bi d-block mx-auto mb-1" height="24px" viewBox="0 0 24 24" width="24px" fill="#2470dc"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-5h2v5zm4 0h-2v-3h2v3zm0-5h-2v-2h2v2zm4 5h-2V7h2v10z"/></svg>
               <span className="text-dark text-small">Analytic Integrations</span>
             </a>
           </li>
@@ -95,7 +95,7 @@ export default class BoardDeveloper extends Component {
                  
               <div className="p-5 mb-4 bg-light rounded-3">
                   <h2 className="display-5 fw-bold" id="api-doc">REST API V2 Documentation</h2>
-                  <p className="col text-white">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <p className="">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
                   <Link to={"/api-doc"} className="nav-link">
                     <button className="btn btn-primary" type="button">Start Testing</button>
                   </Link>
